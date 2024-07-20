@@ -5,16 +5,67 @@ using System.Linq;
 
 public class WordBank : MonoBehaviour
 {
-    private List<string> originalWords = new List<string>(){
-        "I love my dog.", "I love my dad.", "I love my mom.", "I am an ABG."
-    };
-
+    public int level = 1; 
+    public List<string> originalWords = new List<string>();
     private List<string> workingWords = new List<string>();
+    public bool levelDone = false;
 
-    private void Awake(){
-        workingWords.AddRange(originalWords);
-        Shuffle(workingWords); 
+    void Start(){
+        //workingWords.AddRange(originalWords);
+        //Shuffle(originalWords); 
         //ConvertToLower(workingWords);
+    }
+
+    public void levelChecker(int level){
+        switch (level) {
+        case 1:
+            //originalWords.Add("I love my dog.");
+            originalWords = new List<string>(){
+                "I love my dog."
+            };
+            break;
+            
+        case 2:
+            originalWords = new List<string>(){
+                "This is now level 2.", "I am so very freaky.", "Happy birthday!", "Adrian Bilawalla <3"
+            };
+            break;
+            
+        case 3:
+            originalWords = new List<string>(){
+                "Level 3", "Test"
+            };
+            break;
+            
+        case 4:
+            originalWords = new List<string>(){
+                "Level 4", "Cuatro", "QUATRO"
+            };
+            break;
+            
+        case 5:
+            originalWords = new List<string>(){
+                "Level 5", "EASTER EGG"
+            };
+            break;
+            
+        case 6:
+            originalWords = new List<string>(){
+                "Level 6", "666 is devil's number, very bad"
+            };
+            break;
+            
+        case 7:
+            originalWords = new List<string>(){
+                "Level 7", "muy caliente", "gasto gasto lang nang pera"
+            };
+            break; 
+
+        default:    
+            break;
+        }
+        Shuffle(originalWords);
+        
     }
 
     private void Shuffle(List<string> list){
@@ -34,18 +85,14 @@ public class WordBank : MonoBehaviour
     public string GetWord(){
         string newWord = string.Empty; 
 
-        if (workingWords.Count != 0){
-            newWord = workingWords.Last();
-            workingWords.Remove(newWord);
+        if (originalWords.Count != 0){
+            newWord = originalWords.Last();
+            originalWords.Remove(newWord);
+        } else {
+            levelDone = true;
         }
 
         return newWord;
-    }
-
-    // Start is called before the first frame update
-    void Start()
-    {
-        
     }
 
     // Update is called once per frame

@@ -16,15 +16,23 @@ public class Typer : MonoBehaviour
     // Start is called before the first frame update
     private void Start()
     {
+        wordBank.levelDone = false;
+        wordBank.level = 1;
+        wordBank.levelChecker(wordBank.level);
         SetCurrentWord();
     }
 
-    private void SetCurrentWord(){
+    public void SetCurrentWord(){
         //Get bank word
         currentWord = wordBank.GetWord();
         SetRemainingWord(currentWord);
         initialLength = currentWord.Length;
         removedCount = 0;
+
+        if (wordBank.levelDone){
+            RectTransform rt = wordOutput.GetComponent<RectTransform>();
+            rt.anchoredPosition = new Vector3(0f, 1000f, 0f);
+        }
     }
 
     private void SetRemainingWord(string newString){
@@ -50,11 +58,14 @@ public class Typer : MonoBehaviour
     private void EnterLetter(string typedLetter){
         if(IsCorrectLetter(typedLetter)){
             RemoveLetter();
+            wordOutput.GetComponent<Text>().color = Color.white;
             if(IsWordComplete()){
                 SetCurrentWord(); 
                 RectTransform rt = wordOutput.GetComponent<RectTransform>();
                 rt.anchoredPosition = new Vector3(250f, 0f, 0f);
             }
+        } else {
+            wordOutput.GetComponent<Text>().color = Color.red;
         }
     }
 
