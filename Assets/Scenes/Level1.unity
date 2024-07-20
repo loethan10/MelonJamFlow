@@ -404,6 +404,30 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 9015861672864677032}
+        m_TargetAssemblyTypeName: Destroy, Assembly-CSharp
+        m_MethodName: DestroyGameObject
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 9015861672864677031}
+        m_TargetAssemblyTypeName: Destroy, Assembly-CSharp
+        m_MethodName: DestroyGameObject
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &135173449
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1047,7 +1071,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   objectToToggle: {fileID: 135173447}
+  objectVisible: 0
   wordBank: {fileID: 1799609244}
+  showButton: 0
 --- !u!114 &2026028157
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1061,7 +1087,20 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   objectToToggle: {fileID: 2097780473}
+  objectVisible: 0
   wordBank: {fileID: 1799609244}
+  showButton: 0
+--- !u!114 &2026028158 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 3335582233950199711, guid: 5d50f8fe2e23f7f4590aef2d73049c59, type: 3}
+  m_PrefabInstance: {fileID: 107567876}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2026028153}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 23cdf1baef98de0469bce22db6e91cbf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &2097780473
 GameObject:
   m_ObjectHideFlags: 0
@@ -1128,6 +1167,30 @@ MonoBehaviour:
       - m_Target: {fileID: 9015861672864677029}
         m_TargetAssemblyTypeName: ButtonUI, Assembly-CSharp
         m_MethodName: NewGameButton
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 9015861672864677032}
+        m_TargetAssemblyTypeName: Destroy, Assembly-CSharp
+        m_MethodName: DestroyGameObject
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 9015861672864677031}
+        m_TargetAssemblyTypeName: Destroy, Assembly-CSharp
+        m_MethodName: DestroyGameObject
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -1311,6 +1374,12 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 7699523379744633917, guid: 2bda8fcef38c2d640be2afb1f2e571ea, type: 3}
       insertIndex: -1
       addedObject: {fileID: 9015861672864677029}
+    - targetCorrespondingSourceObject: {fileID: 7699523379744633917, guid: 2bda8fcef38c2d640be2afb1f2e571ea, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 9015861672864677032}
+    - targetCorrespondingSourceObject: {fileID: 7699523379744633917, guid: 2bda8fcef38c2d640be2afb1f2e571ea, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 9015861672864677031}
   m_SourcePrefab: {fileID: 100100000, guid: 2bda8fcef38c2d640be2afb1f2e571ea, type: 3}
 --- !u!1 &9015861672864677028 stripped
 GameObject:
@@ -1329,7 +1398,35 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9ae74e8447249dc40ac2bec4a41a2534, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  newGameLevel: Level1
+  wordBank: {fileID: 1799609244}
+  typer: {fileID: 2026028158}
+  wordOutput: {fileID: 1460990642}
+--- !u!114 &9015861672864677031
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9015861672864677028}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: db27b5ab7c98b494c85868f26e28708a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  objectToDestroy: {fileID: 2097780473}
+--- !u!114 &9015861672864677032
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9015861672864677028}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: db27b5ab7c98b494c85868f26e28708a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  objectToDestroy: {fileID: 135173447}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
