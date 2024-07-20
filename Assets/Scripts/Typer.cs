@@ -7,8 +7,8 @@ public class Typer : MonoBehaviour
 {
     public Text wordOutput = null;
     private string remainingWord = string.Empty;
-    private string currentWord = "i want to buy the muffins. the muffins tasted good. " +
-    "they tasted like blueberries. my mom killed herself after the divorce.";
+    private string currentWord = "I want to buy the muffins. The muffins tasted good. " +
+    "They tasted like blueberries. My mom killed herself after the divorce.";
 
     int removedCount = 0;
     int initialLength = 0;
