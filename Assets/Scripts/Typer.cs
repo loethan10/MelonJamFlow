@@ -5,10 +5,10 @@ using UnityEngine.UI;
 
 public class Typer : MonoBehaviour
 {
+    public WordBank wordBank = null; 
     public Text wordOutput = null;
     private string remainingWord = string.Empty;
-    private string currentWord = "I want to buy the muffins. The muffins tasted good. " +
-    "They tasted like blueberries. My mom killed herself after the divorce.";
+    private string currentWord = string.Empty;
 
     int removedCount = 0;
     int initialLength = 0;
@@ -21,6 +21,7 @@ public class Typer : MonoBehaviour
 
     private void SetCurrentWord(){
         //Get bank word
+        currentWord = wordBank.GetWord();
         SetRemainingWord(currentWord);
         initialLength = currentWord.Length;
         removedCount = 0;
@@ -51,6 +52,8 @@ public class Typer : MonoBehaviour
             RemoveLetter();
             if(IsWordComplete()){
                 SetCurrentWord(); 
+                RectTransform rt = wordOutput.GetComponent<RectTransform>();
+                rt.anchoredPosition = new Vector3(250f, 0f, 0f);
             }
         }
     }
