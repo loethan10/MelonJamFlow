@@ -228,7 +228,7 @@ public class WordBank : MonoBehaviour
 
         case 8:
             originalWords = new List<string>(){
-                "I got disqualified from a Hackathon", "Bird watching is interesting.", "I sprained my ankle.", "I heard Sarah got pregnant."
+                "I got disqualified from a Hackathon.", "Bird watching is interesting.", "I sprained my ankle.", "I heard Sarah got pregnant."
             };
             if (party){
                 if (college){
@@ -369,7 +369,7 @@ public class WordBank : MonoBehaviour
                     originalWords.Add("Ate a croissant today.");
                     originalWords.Add("Microbiology in 21st century France is awesome.");
                 } else {
-                    originalWords.Add("Are bread today.");
+                    originalWords.Add("Ate bread today.");
                     originalWords.Add("Capitalism needs to be re-evaluated.");
                 }
             } else {
