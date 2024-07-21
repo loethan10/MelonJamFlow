@@ -252,7 +252,7 @@ public class L2 : MonoBehaviour
     }
 
     public void FinishGame(){
-        
+        SceneManager.LoadScene(2);
     }
 
     // Start is called before the first frame update

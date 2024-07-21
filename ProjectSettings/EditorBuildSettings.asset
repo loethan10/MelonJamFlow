@@ -9,6 +9,9 @@ EditorBuildSettings:
     path: Assets/Scenes/WelcomeCutScene.unity
     guid: 9c7cd60a0b3b6494781740b6137539ad
   - enabled: 1
-    path: Assets/Scenes/levelchannelshakey.unity
-    guid: b0d9d38680046c0419940f4eb496fbbc
+    path: Assets/TomStinks.unity
+    guid: c77896034331fda47b677fcd0c708b01
+  - enabled: 1
+    path: Assets/EndingScene.unity
+    guid: ccf2c2c2cfc21ad4c98b002cefc8fc7e
   m_configObjects: {}

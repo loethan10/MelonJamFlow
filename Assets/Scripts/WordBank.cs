@@ -93,7 +93,7 @@ public class WordBank : MonoBehaviour
             }
 
             Shuffle(originalWords);
-            originalWords.Insert(0, "Tom is picking on Will. Should I fight him?");
+            originalWords.Insert(0, "Tom is picking on some kid. Should I fight him?");
             break;
             
         case 4:
@@ -212,6 +212,8 @@ public class WordBank : MonoBehaviour
                 originalWords.Add("I love hiking!");
             } else {
                 originalWords.Add("I joined a Pokemon Go club!");
+                originalWords.Add("Bees are scary.");
+                originalWords.Add("My friends want to do a sports day!");
             }
 
             if (lie){
