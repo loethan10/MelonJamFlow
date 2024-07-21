@@ -251,6 +251,10 @@ public class L2 : MonoBehaviour
         //SceneManager.LoadScene(newGameLevel);
     }
 
+    public void FinishGame(){
+        
+    }
+
     // Start is called before the first frame update
     void Start()
     {
