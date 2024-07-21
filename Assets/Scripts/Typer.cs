@@ -62,7 +62,7 @@ public class Typer : MonoBehaviour
             if(IsWordComplete()){
                 SetCurrentWord(); 
                 RectTransform rt = wordOutput.GetComponent<RectTransform>();
-                rt.anchoredPosition = new Vector3(250f, 0f, 0f);
+                rt.anchoredPosition = new Vector3(350f, 0f, 0f);
             }
         } else {
             wordOutput.GetComponent<Text>().color = Color.red;
