@@ -7,7 +7,7 @@ public class ChangeScenes : MonoBehaviour
 {
     public void GoToSceneTwo()
     {
-        SceneManager.LoadScene("Level1");
+        SceneManager.LoadScene(1);
         
     }
 }
