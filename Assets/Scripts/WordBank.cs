@@ -49,6 +49,9 @@ public class WordBank : MonoBehaviour
             originalWords = new List<string>(){
                 "wah-wah", "goo goo ga ga"
             };
+            
+            Shuffle(originalWords);
+            originalWords.Insert(0, "i walk or i crawl");
             break;
             
         case 2:
@@ -366,7 +369,6 @@ public class WordBank : MonoBehaviour
             break;
         }
 
-        Shuffle(originalWords);
         
     }
 

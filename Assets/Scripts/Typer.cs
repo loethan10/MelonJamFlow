@@ -58,7 +58,7 @@ public class Typer : MonoBehaviour
     private void EnterLetter(string typedLetter){
         if(IsCorrectLetter(typedLetter)){
             RemoveLetter();
-            wordOutput.GetComponent<Text>().color = Color.white;
+            wordOutput.GetComponent<Text>().color = Color.black;
             if(IsWordComplete()){
                 SetCurrentWord(); 
                 RectTransform rt = wordOutput.GetComponent<RectTransform>();
