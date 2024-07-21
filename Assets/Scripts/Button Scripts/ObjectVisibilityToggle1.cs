@@ -1,6 +1,6 @@
 using UnityEngine;
 
-public class ObjectVisibilityToggle : MonoBehaviour
+public class ObjectVisibilityToggle1 : MonoBehaviour
 {
     public GameObject objectToToggle;
     //public float toggleDistance = 3f;
@@ -15,7 +15,7 @@ public class ObjectVisibilityToggle : MonoBehaviour
 
     private void Update()
     {
-        if (wordBank.levelDone && objectToToggle != null)
+        if (wordBank.level1Done && objectToToggle != null)
         {
             ToggleObjectVisibility();
         }
@@ -23,7 +23,7 @@ public class ObjectVisibilityToggle : MonoBehaviour
 
     public void ToggleObjectVisibility()
     {
-        if (!objectVisible || wordBank.levelDone)
+        if (!objectVisible || wordBank.level1Done)
         {
             Vector3 playerPosition = transform.position;
             Vector3 objectPosition = objectToToggle.transform.position;

@@ -6,10 +6,11 @@ using UnityEngine;
 public class Destroy : MonoBehaviour {
 
  [SerializeField]
- GameObject objectToDestroy;
+ GameObject objectToDestroy1, objectToDestroy2;
 
  public void DestroyGameObject()
  {
-  Destroy (objectToDestroy);
+  Destroy (objectToDestroy1);
+  Destroy (objectToDestroy2);
  }
 }

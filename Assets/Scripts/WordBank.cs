@@ -9,6 +9,21 @@ public class WordBank : MonoBehaviour
     public List<string> originalWords = new List<string>();
     private List<string> workingWords = new List<string>();
     public bool levelDone = false;
+    
+    public bool level1Done = false;
+    public bool level2Done = false;
+    public bool level3Done = false;
+    public bool level4Done = false;
+    public bool level5Done = false;
+    public bool level6Done = false;
+    public bool level7Done = false;
+    public bool level8Done = false;
+    public bool level9Done = false;
+    public bool level10Done = false;
+    public bool level11Done = false;
+
+    public bool walk = false;
+    public bool lie = false;
 
     void Start(){
         //workingWords.AddRange(originalWords);
@@ -21,20 +36,42 @@ public class WordBank : MonoBehaviour
         case 1:
             //originalWords.Add("I love my dog.");
             originalWords = new List<string>(){
-                "I love my dog."
+                "wah-wah", "goo goo ga ga"
             };
             break;
             
         case 2:
-            originalWords = new List<string>(){
-                "This is now level 2.", "I am so very freaky.", "Happy birthday!", "Adrian Bilawalla <3"
-            };
+            if (walk){
+                originalWords = new List<string>(){
+                    "Dad was proud of me!", "Mom didn't see me walk.", "Legos hurt."
+                };
+            } else {
+                originalWords = new List<string>(){
+                    "Dad carried me around today.", "I want to go outside."
+                };
+            }
+            originalWords.Add("I befriended a girl named Natalie.");
+            originalWords.Add("I like to eat cake.");
             break;
             
         case 3:
             originalWords = new List<string>(){
-                "Level 3", "Test"
+                    "Mom and dad adopted us a dog!"
             };
+            
+            if(lie){    
+                originalWords.Add("My parents grounded me.");
+            }else{
+                originalWords.Add("My parents were disappointed.");
+            }
+            if(walk){
+                originalWords.Add("I beat Will in a race today.");
+                originalWords.Add("Want to be friends?");
+            }else{
+                originalWords.Add("Will didn’t want to be my friend.");
+                originalWords.Add("I like science.");
+                originalWords.Add("I’m going to read my book inside");
+            }
             break;
             
         case 4:
@@ -89,7 +126,44 @@ public class WordBank : MonoBehaviour
             newWord = originalWords.Last();
             originalWords.Remove(newWord);
         } else {
-            levelDone = true;
+            switch(level){
+                case 1:
+                    level1Done = true;
+                    break;
+                case 2:
+                    level2Done = true;
+                    break;
+                case 3:
+                    level3Done = true;
+                    break;
+                case 4:
+                    level4Done = true;
+                    break;
+                case 5:
+                    level5Done = true;
+                    break;
+                case 6:
+                    level6Done = true;
+                    break;               
+                case 7:
+                    level7Done = true;
+                    break;
+                case 8:
+                    level8Done = true;
+                    break;
+                case 9:
+                    level9Done = true;
+                    break;
+                case 10:
+                    level10Done = true;
+                    break;
+                case 11:
+                    level11Done = true;
+                    break;
+                default:
+                    levelDone = true;
+                    break;
+            }
         }
 
         return newWord;
