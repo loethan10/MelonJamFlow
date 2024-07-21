@@ -31,7 +31,7 @@ public class Typer : MonoBehaviour
 
         if (wordBank.levelDone){
             RectTransform rt = wordOutput.GetComponent<RectTransform>();
-            rt.anchoredPosition = new Vector3(0f, 1000f, 0f);
+            rt.anchoredPosition = new Vector3(250f, 150f, 0f);
         }
     }
 
@@ -62,7 +62,7 @@ public class Typer : MonoBehaviour
             if(IsWordComplete()){
                 SetCurrentWord(); 
                 RectTransform rt = wordOutput.GetComponent<RectTransform>();
-                rt.anchoredPosition = new Vector3(250f, 0f, 0f);
+                rt.anchoredPosition = new Vector3(250f, 150f, 0f);
             }
         } else {
             wordOutput.GetComponent<Text>().color = Color.red;

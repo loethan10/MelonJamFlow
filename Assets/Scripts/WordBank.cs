@@ -66,6 +66,9 @@ public class WordBank : MonoBehaviour
             }
             originalWords.Add("I befriended a girl named Natalie.");
             originalWords.Add("I like to eat cake.");
+
+            Shuffle(originalWords);
+            originalWords.Insert(0, "I broke the vase. Should I lie?");
             break;
             
         case 3:
@@ -85,9 +88,12 @@ public class WordBank : MonoBehaviour
             } else{
                 originalWords.Add("Will didn't want to be my friend.");
                 originalWords.Add("I like science.");
-                originalWords.Add("I'm going to read my book inside");
+                originalWords.Add("I'm going to read my book inside.");
                 Will = false; 
             }
+
+            Shuffle(originalWords);
+            originalWords.Insert(0, "Tom is picking on Will. Should I fight him?");
             break;
             
         case 4:
@@ -106,9 +112,12 @@ public class WordBank : MonoBehaviour
                     originalWords.Add("My parents took me to the ER for my broken arm.");
                 } 
             } else {
-                originalWords.Add("Will left me for the bully, Tom");
+                originalWords.Add("Will left me for the bully, Tom.");
                 Will = false; 
             }
+
+            Shuffle(originalWords);
+            originalWords.Insert(0, "Should I go out with Jasmine or Natalie?");
             break;
             
         case 5:
@@ -124,6 +133,9 @@ public class WordBank : MonoBehaviour
                 originalWords.Add("I miss Natalie; we used to hang out so much.");
                 originalWords.Add("Jasmine is so beautiful.");
             }
+
+            Shuffle(originalWords);
+            originalWords.Insert(0, "I might have to move high schools. Should I?");
             break;
             
         case 6:
@@ -165,6 +177,9 @@ public class WordBank : MonoBehaviour
                 originalWords.Add("I caught a Snorlax! Best day ever!");
                 originalWords.Add("Shake it off- shake it off!");
             }
+
+            Shuffle(originalWords);
+            originalWords.Insert(0, "I'm broke. I don't know if I should go to UCLA.");
             break;
             
         case 7:
@@ -204,6 +219,9 @@ public class WordBank : MonoBehaviour
             } else {
                 originalWords.Add("I failed a class; lowkey should've cheated.");
             }
+
+            Shuffle(originalWords);
+            originalWords.Insert(0, "Alaine asked if we should go PARTY!");
             break; 
 
         case 8:
@@ -213,7 +231,7 @@ public class WordBank : MonoBehaviour
             if (party){
                 if (college){
                     originalWords.Add("UCLA IS SO MUCH FUN");
-                    originalWords.Add("My mom was upset that I joined a frat");
+                    originalWords.Add("My mom was upset that I joined a frat.");
                 } else {
                     originalWords.Add("Mel, Juni, and I are gonna go bar hopping!");
                     originalWords.Add("I should start a podcast!");
@@ -233,6 +251,9 @@ public class WordBank : MonoBehaviour
             if (college && !Tom){
                 originalWords.Add("Demarie highkey looking mega jacked.");
             }
+
+            Shuffle(originalWords);
+            originalWords.Insert(0, "I love Bea. Do I rush to propose now or later?");
             break;
         
         case 9:
@@ -276,6 +297,9 @@ public class WordBank : MonoBehaviour
             } else {
                 originalWords.Add("I take good care of Bea.");
             }
+
+            Shuffle(originalWords);
+            originalWords.Insert(0, "Bea's pregnant! I'm not sure what to name our kid!");
             break;
         
         case 10:
@@ -310,6 +334,9 @@ public class WordBank : MonoBehaviour
                     originalWords.Add("I wonder when Michael will stop crawling. She seems so tired.");
                 } 
             }
+
+            Shuffle(originalWords);
+            originalWords.Insert(0, "Should I stay in the US or move to France?");
             break;
 
         case 11:

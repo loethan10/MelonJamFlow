@@ -19,7 +19,7 @@ public class L2 : MonoBehaviour
         wordBank.levelChecker(wordBank.level);
         typer.SetCurrentWord();
         RectTransform rt = wordOutput.GetComponent<RectTransform>();
-        rt.anchoredPosition = new Vector3(250f, 0f, 0f);
+        rt.anchoredPosition = new Vector3(250f, 150f, 0f);
         //SceneManager.LoadScene(newGameLevel);
     }
 
@@ -31,7 +31,7 @@ public class L2 : MonoBehaviour
         wordBank.levelChecker(wordBank.level);
         typer.SetCurrentWord();
         RectTransform rt = wordOutput.GetComponent<RectTransform>();
-        rt.anchoredPosition = new Vector3(250f, 0f, 0f);
+        rt.anchoredPosition = new Vector3(250f, 150f, 0f);
         //SceneManager.LoadScene(newGameLevel);
     }
 
@@ -43,7 +43,7 @@ public class L2 : MonoBehaviour
         wordBank.levelChecker(wordBank.level);
         typer.SetCurrentWord();
         RectTransform rt = wordOutput.GetComponent<RectTransform>();
-        rt.anchoredPosition = new Vector3(250f, 0f, 0f);
+        rt.anchoredPosition = new Vector3(250f, 150f, 0f);
         //SceneManager.LoadScene(newGameLevel);
     }
 
@@ -55,7 +55,7 @@ public class L2 : MonoBehaviour
         wordBank.levelChecker(wordBank.level);
         typer.SetCurrentWord();
         RectTransform rt = wordOutput.GetComponent<RectTransform>();
-        rt.anchoredPosition = new Vector3(250f, 0f, 0f);
+        rt.anchoredPosition = new Vector3(250f, 150f, 0f);
         //SceneManager.LoadScene(newGameLevel);
     }
 
@@ -67,7 +67,7 @@ public class L2 : MonoBehaviour
         wordBank.levelChecker(wordBank.level);
         typer.SetCurrentWord();
         RectTransform rt = wordOutput.GetComponent<RectTransform>();
-        rt.anchoredPosition = new Vector3(250f, 0f, 0f);
+        rt.anchoredPosition = new Vector3(250f, 150f, 0f);
         //SceneManager.LoadScene(newGameLevel);
     }
 
@@ -79,7 +79,7 @@ public class L2 : MonoBehaviour
         wordBank.levelChecker(wordBank.level);
         typer.SetCurrentWord();
         RectTransform rt = wordOutput.GetComponent<RectTransform>();
-        rt.anchoredPosition = new Vector3(250f, 0f, 0f);
+        rt.anchoredPosition = new Vector3(250f, 150f, 0f);
         //SceneManager.LoadScene(newGameLevel);
     }
 
@@ -91,7 +91,7 @@ public class L2 : MonoBehaviour
         wordBank.levelChecker(wordBank.level);
         typer.SetCurrentWord();
         RectTransform rt = wordOutput.GetComponent<RectTransform>();
-        rt.anchoredPosition = new Vector3(250f, 0f, 0f);
+        rt.anchoredPosition = new Vector3(250f, 150f, 0f);
         //SceneManager.LoadScene(newGameLevel);
     }
 
@@ -103,7 +103,7 @@ public class L2 : MonoBehaviour
         wordBank.levelChecker(wordBank.level);
         typer.SetCurrentWord();
         RectTransform rt = wordOutput.GetComponent<RectTransform>();
-        rt.anchoredPosition = new Vector3(250f, 0f, 0f);
+        rt.anchoredPosition = new Vector3(250f, 150f, 0f);
         //SceneManager.LoadScene(newGameLevel);
     }
 
@@ -115,7 +115,7 @@ public class L2 : MonoBehaviour
         wordBank.levelChecker(wordBank.level);
         typer.SetCurrentWord();
         RectTransform rt = wordOutput.GetComponent<RectTransform>();
-        rt.anchoredPosition = new Vector3(250f, 0f, 0f);
+        rt.anchoredPosition = new Vector3(250f, 150f, 0f);
         //SceneManager.LoadScene(newGameLevel);
     }
 
@@ -127,7 +127,7 @@ public class L2 : MonoBehaviour
         wordBank.levelChecker(wordBank.level);
         typer.SetCurrentWord();
         RectTransform rt = wordOutput.GetComponent<RectTransform>();
-        rt.anchoredPosition = new Vector3(250f, 0f, 0f);
+        rt.anchoredPosition = new Vector3(250f, 150f, 0f);
         //SceneManager.LoadScene(newGameLevel);
     }
 
@@ -139,7 +139,7 @@ public class L2 : MonoBehaviour
         wordBank.levelChecker(wordBank.level);
         typer.SetCurrentWord();
         RectTransform rt = wordOutput.GetComponent<RectTransform>();
-        rt.anchoredPosition = new Vector3(250f, 0f, 0f);
+        rt.anchoredPosition = new Vector3(250f, 150f, 0f);
         //SceneManager.LoadScene(newGameLevel);
     }
 
@@ -151,7 +151,7 @@ public class L2 : MonoBehaviour
         wordBank.levelChecker(wordBank.level);
         typer.SetCurrentWord();
         RectTransform rt = wordOutput.GetComponent<RectTransform>();
-        rt.anchoredPosition = new Vector3(250f, 0f, 0f);
+        rt.anchoredPosition = new Vector3(250f, 150f, 0f);
         //SceneManager.LoadScene(newGameLevel);
     }
 
@@ -163,7 +163,7 @@ public class L2 : MonoBehaviour
         wordBank.levelChecker(wordBank.level);
         typer.SetCurrentWord();
         RectTransform rt = wordOutput.GetComponent<RectTransform>();
-        rt.anchoredPosition = new Vector3(250f, 0f, 0f);
+        rt.anchoredPosition = new Vector3(250f, 150f, 0f);
         //SceneManager.LoadScene(newGameLevel);
     }
 
@@ -175,7 +175,7 @@ public class L2 : MonoBehaviour
         wordBank.levelChecker(wordBank.level);
         typer.SetCurrentWord();
         RectTransform rt = wordOutput.GetComponent<RectTransform>();
-        rt.anchoredPosition = new Vector3(250f, 0f, 0f);
+        rt.anchoredPosition = new Vector3(250f, 150f, 0f);
         //SceneManager.LoadScene(newGameLevel);
     }
 
@@ -187,7 +187,7 @@ public class L2 : MonoBehaviour
         wordBank.levelChecker(wordBank.level);
         typer.SetCurrentWord();
         RectTransform rt = wordOutput.GetComponent<RectTransform>();
-        rt.anchoredPosition = new Vector3(250f, 0f, 0f);
+        rt.anchoredPosition = new Vector3(250f, 150f, 0f);
         //SceneManager.LoadScene(newGameLevel);
     }
 
@@ -199,7 +199,7 @@ public class L2 : MonoBehaviour
         wordBank.levelChecker(wordBank.level);
         typer.SetCurrentWord();
         RectTransform rt = wordOutput.GetComponent<RectTransform>();
-        rt.anchoredPosition = new Vector3(250f, 0f, 0f);
+        rt.anchoredPosition = new Vector3(250f, 150f, 0f);
         //SceneManager.LoadScene(newGameLevel);
     }
 
@@ -211,7 +211,7 @@ public class L2 : MonoBehaviour
         wordBank.levelChecker(wordBank.level);
         typer.SetCurrentWord();
         RectTransform rt = wordOutput.GetComponent<RectTransform>();
-        rt.anchoredPosition = new Vector3(250f, 0f, 0f);
+        rt.anchoredPosition = new Vector3(250f, 150f, 0f);
         //SceneManager.LoadScene(newGameLevel);
     }
 
@@ -223,7 +223,7 @@ public class L2 : MonoBehaviour
         wordBank.levelChecker(wordBank.level);
         typer.SetCurrentWord();
         RectTransform rt = wordOutput.GetComponent<RectTransform>();
-        rt.anchoredPosition = new Vector3(250f, 0f, 0f);
+        rt.anchoredPosition = new Vector3(250f, 150f, 0f);
         //SceneManager.LoadScene(newGameLevel);
     }
 
@@ -235,7 +235,7 @@ public class L2 : MonoBehaviour
         wordBank.levelChecker(wordBank.level);
         typer.SetCurrentWord();
         RectTransform rt = wordOutput.GetComponent<RectTransform>();
-        rt.anchoredPosition = new Vector3(250f, 0f, 0f);
+        rt.anchoredPosition = new Vector3(250f, 150f, 0f);
         //SceneManager.LoadScene(newGameLevel);
     }
 
@@ -247,7 +247,7 @@ public class L2 : MonoBehaviour
         wordBank.levelChecker(wordBank.level);
         typer.SetCurrentWord();
         RectTransform rt = wordOutput.GetComponent<RectTransform>();
-        rt.anchoredPosition = new Vector3(250f, 0f, 0f);
+        rt.anchoredPosition = new Vector3(250f, 150f, 0f);
         //SceneManager.LoadScene(newGameLevel);
     }
 
